@@ -1,0 +1,340 @@
+/* Noto Serif Police */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Night Mode */
+
+.label {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.fa-lightbulb {
+  color: gold;
+}
+
+.checkbox {
+  visibility: hidden;
+}
+
+.dark {
+  background: #333;
+  transition: 2s;
+  color: #eee;
+}
+
+/* Global page parameters */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif", sans-serif;
+}
+body {
+  transition: 2s;
+}
+
+section {
+  margin: 5%;
+  text-align: justify;
+}
+
+article {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+h1 {
+  color: gold;
+}
+
+h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: gold;
+}
+/* Navigation bar */
+
+nav {
+  position: absolute;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 4px 10px 0.2px rgb(216, 213, 213);
+}
+
+.dark nav {
+  box-shadow: 0px 4px 10px 0.2px rgb(17, 17, 17);
+}
+
+.logo {
+  background: url(./assets/logo.png) no-repeat center/contain;
+  flex: 1;
+  transition: 2s;
+}
+
+.dark .logo {
+  background: url(./assets/logodark.png) no-repeat center/contain;
+  flex: 1;
+  transition: 2s;
+}
+
+ul {
+  display: flex;
+  flex: 3;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  color: gold;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+hr {
+  background-color: gold; /* all navigator */
+  border-color: gold; /* all navigator */
+  height: 100%;
+}
+
+/* Welcome div */
+
+.welcome {
+  width: 100%;
+  vertical-align: middle;
+  line-height: 60vh;
+  text-align: center;
+
+  color: gold;
+
+  margin-top: 16vh;
+  height: 60vh;
+  filter: sepia(40%);
+  background: url(./assets/castle.jpg) no-repeat center/cover;
+  transition: 1s;
+
+  box-shadow: 10px 2px 5px 1px rgb(216, 213, 213);
+}
+.dark .welcome {
+  box-shadow: 10px 2px 5px 1px rgb(17, 17, 17);
+  transition: 2s;
+}
+.welcome:hover {
+  filter: none;
+}
+
+/* HOME PAGE */
+
+#mainPage {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.heroes {
+  flex: 2;
+
+  color: #333;
+  text-align: center;
+  background: gold;
+  margin: 5%;
+  padding: 5%;
+}
+
+aside {
+  padding: 5%;
+  flex: 1;
+  text-align: justify;
+}
+
+/* ROYAL FAMILY */
+
+#royalSection {
+  margin-top: 32vh;
+  text-align: justify;
+}
+
+.royalbox {
+  border-radius: 15px 15px 0px 0px;
+  border: 2px solid rgb(223, 210, 141);
+  box-shadow: 0px 4px 10px 0.2px rgb(161, 161, 161);
+}
+
+img {
+  width: 20vw;
+  height: 50vh;
+  display: block;
+  border-radius: 15px 15px 0px 0px;
+  filter: sepia(60%);
+  transition: 2s;
+}
+
+img:hover {
+  filter: none;
+}
+
+.royalFamily {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  max-width: 90%;
+  align-items: center;
+}
+
+.royal {
+  color: gold;
+  text-align: center;
+}
+
+/* ASSETS */
+
+#assets {
+  margin-top: 32vh;
+  text-align: justify;
+}
+
+table,
+td,
+th,
+tr {
+  border: 1px solid rgb(223, 210, 141);
+}
+
+table {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 5%;
+}
+
+thead {
+  color: gold;
+  text-align: center;
+  height: 7vh;
+}
+
+tr {
+  height: 3vh;
+  width: 10vh;
+}
+
+th,
+tr {
+  text-align: center;
+}
+
+th {
+  background: rgb(250, 243, 236);
+  color: #333;
+}
+.dark th {
+  background: rgb(207, 182, 157);
+  color: #eee;
+}
+.assetslist {
+  border: 2px solid rgb(223, 210, 141);
+  box-shadow: 0px 4px 10px 0.2px rgb(161, 161, 161);
+}
+.planning {
+  border: 2px solid rgb(223, 210, 141);
+  box-shadow: 0px 4px 10px 0.2px rgb(161, 161, 161);
+}
+
+.victory {
+  background: rgb(189, 228, 189);
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 32vh;
+}
+
+.formcontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactinput {
+  padding: 2%;
+  background-color: #eee;
+  margin-top: 2%;
+  border: 1px solid gold;
+  border-radius: 10px;
+  color: grey;
+  font-size: 1em;
+  font-weight: 400;
+  width: 45%;
+}
+
+.contactinput:focus {
+  outline-color: gold;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 0.9;
+}
+
+textarea {
+  padding: 2%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  border: 1px solid gold;
+  border-radius: 10px;
+  color: grey;
+  font-size: 1em;
+  font-weight: 400;
+  width: 100%;
+  height: 300px;
+}
+
+textarea:focus {
+  outline-color: gold;
+}
+
+.submitbutton {
+  border: 1px solid gold;
+  background-color: gold;
+  border-radius: 10px;
+  color: white;
+  width: 15%;
+}
+
+.findUs {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 20vh;
+}
+
+/* FOOTER */
+
+footer {
+  margin: 5%;
+}
