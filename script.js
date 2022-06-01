@@ -1,10 +1,15 @@
 // NIGHT MODE //
 const nightMode = document.getElementById("night");
 
-console.log(nightMode);
+if (localStorage.getItem("nightmode") === "true") {
+  console.log(localStorage.getItem("nightmode"));
+  document.body.classList.add("dark");
+}
 
 nightMode.addEventListener("change", () => {
   document.body.classList.toggle("dark");
+
+  localStorage.setItem("nightmode", document.body.classList.contains("dark"));
 });
 
 // SUBMIT ALERT //
